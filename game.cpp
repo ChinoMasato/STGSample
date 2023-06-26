@@ -12,9 +12,7 @@ void initGame()
 //ゲーム内容の更新
 void updateGame()
 {
-	if (gameOverFlag == false) {
-		score++;//１フレームごとに１点加算
-	}
+
 }
 //ゲーム情報の描画
 void drawGame()
