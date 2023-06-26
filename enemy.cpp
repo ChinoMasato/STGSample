@@ -7,7 +7,7 @@
 #include "enemy.h"
 #include "player.h"
 #include "effect.h"
-
+#include "game.h"
 extern bool gameOverFlag;//ゲームオーバー判定
 En enemy[EnemyNum];//敵
 
@@ -256,7 +256,9 @@ void updateEnemy()
 						PlaySoundMem(explodese, DX_PLAYTYPE_BACK);
 
 						explosion(enemy[i]);//爆発
-
+						if (gameOverFlag == false) {
+							score++;//１フレームごとに１点加算
+						}
 						break;
 					}
 				}
