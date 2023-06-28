@@ -32,8 +32,6 @@ struct En
 	int counter;
 	int spawnTiming;//出現タイミング
 	std::map<int,MovePattern> pattern;
-	int imgSizeX = 0;
-	int imgSizeY = 0;
 };
 
 bool isHit(En en1, En en2);//当たり判定関数
