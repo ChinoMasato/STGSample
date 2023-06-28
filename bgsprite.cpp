@@ -27,8 +27,8 @@ double scroll(double x,double speed)
 void updateBg()
 {
 	//ÉXÉNÉçÅ[Éã
-	scrollX1  = scroll(scrollX1,  0.5);
-	scrollX2  = scroll(scrollX2, 0.5);
+	scrollX1  = scroll(scrollX1,  0.2);
+	scrollX2  = scroll(scrollX2, 0.2);
 
 	scrollX3 = scroll(scrollX3, 1.0);
 	scrollX4 = scroll(scrollX4, 1.0);
